@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wetlands Map Overlay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Wetlands Map Overlay</h1>
+    <div class="main-content">
+        <div class="left-panel">
+            <div class="toggle-controls">
+                <label><input type="checkbox" id="swamp-toggle" checked> SWAMP (231m)</label>
+                <label><input type="checkbox" id="globcover-toggle" checked> GlobCover (30m)</label>
+                <label><input type="checkbox" id="glwd-toggle" checked> GLWD (1km)</label>
+            </div>
+            <div class="zoom-controls">
+                <button id="zoom-in">Zoom In</button>
+                <button id="zoom-out">Zoom Out</button>
+            </div>
+            <div class="map-container">
+                <div class="map-bounding-box">
+                    <img src="Maps/GlobCovermap.png" id="globcover-img" class="overlay-img" alt="GlobCover (30m)">
+                    <img src="Maps/GLWDmap.png" id="glwd-img" class="overlay-img" alt="GLWD (1km)">
+                    <img src="Maps/SWAMPmap.png" id="swamp-img" class="overlay-img" alt="SWAMP (231m)">
+                </div>
+            </div>
+        </div>
+        <div class="info-box" id="info-box">
+            <h2 id="info-title">SWAMP (231m)</h2>
+            <div id="info-content">
+                <strong>SWAMP (Sustainable Wetlands Adaptation and Mitigation Program)</strong><br>
+                The global wetlands map developed under the Sustainable Wetlands Adaptation and Mitigation Program (SWAMP) is the result of a partnership between the Center for International Forestry Research (CIFOR) and the United States Forest Service, with support from USAID and the CGIAR Research Program on Forests, Trees and Agroforestry (FTA).<br>
+                The SWAMP Global Wetlands Map focuses on tropical and subtropical regions, and is created using a hydro-geomorphological modeling approach based on an Expert System, which estimates wetland areas by integrating three key biophysical indicators: long term water availability exceeding atmospheric demand, soils that are waterlogged either seasonally or year-round, and geomorphological settings that promote water accumulation and retention (Gumbricht et al.,2017).
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
